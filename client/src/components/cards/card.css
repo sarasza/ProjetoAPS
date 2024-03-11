@@ -1,0 +1,24 @@
+.card--container {
+    width: 250px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 10;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.card--container:hover{
+    background: aqua;
+}
+
+.card--nome {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card--horarioA {
+    margin-top: 5px;
+}
+
+.card--horarioF {
+    margin-top: 5px;
+}
