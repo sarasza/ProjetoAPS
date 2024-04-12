@@ -24,14 +24,14 @@ function App() {
       horario_fechamento: values.horario_fechamento,
     }).then((response) => {
       console.log(response);
-    });
-  };
+    })
+  }
 
   useEffect(() => {
     Axios.get("http://localhost:3001/getCards").then((response) => {
       setListAreas(response.data);
-    });
-  }, []);
+    })
+  }, [])
 
   return (
     <div className="app--container">
@@ -48,10 +48,10 @@ function App() {
     { typeof listAreas !== "undefined" && listAreas.map((value) => {
       return (
         <Card key={value.id} listCard={listAreas} setListCard={setListAreas} id={value.id} nome={value.nome} descricao={value.descricao} horario_abertura={value.horario_abertura} horario_fechamento={value.horario_fechamento}></Card>
-      );
-    })};
+      )
+    })}
     </div>
-  );
+  )
 }
 
 export default App;
